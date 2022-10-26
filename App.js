@@ -1,20 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import 'react-native-gesture-handler';
+import { NavigationContainer } from '@react-navigation/native';
+import StackNavigation from './components/Navigation/StackNavigation';
+import ListProduct from './components/ListProduct/ListProduct';
+import { LogBox } from 'react-native';
+import { Provider } from 'react-redux';
+import { store } from './components/public/Redux/store';
+
+// Ignore log notification by message:
+LogBox.ignoreLogs(['Warning: ...']);
+LogBox.ignoreLogs(['Remote debugger']);
+// Ignore all log notifications:
+LogBox.ignoreAllLogs();
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Provider store={store}>
+      <NavigationContainer>
+        <StackNavigation />
+      </NavigationContainer>
+    </Provider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

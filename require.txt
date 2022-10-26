@@ -1,0 +1,26 @@
+@react-navigation/drawer
+@react-navigation/native
+@react-navigation/native-stack
+expo-constants
+react-native-gesture-handler 
+react-native-reanimated
+react-native-pager-view
+expo-file-system
+expo-font
+react-native-vector-icons
+react-native-screens 
+react-native-safe-area-context
+@react-navigation/bottom-tabs
+react-native-image-slider-box
+react-redux
+@reduxjs/toolkit
+react-native-dropdown-picker
+@stripe/stripe-react-native
+'react-native-paper';
+
+react-native-snap-carousel
+expo-image-picker
+react-native-ratings
+react-native-chart-kit 
+react-native-svg
+react-native-modal-datetime-picker @react-native-community/datetimepicker

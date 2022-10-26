@@ -28,6 +28,17 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "@stripe/stripe-react-native",
+        {
+          "merchantIdentifier": "string | string []",
+          "enableGooglePay": true
+        }
+        
+      ]
+    ]
+
   }
 }
